@@ -6,6 +6,11 @@
     @apply max-w-[1800px] mx-auto px-3 md:px-12;
 }
 
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
 /* ************sp1 marketplace table skeleton design**************  */
 .sp1_marketplace_skeleton_table {
     width: 100%;

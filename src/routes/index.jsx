@@ -4,6 +4,7 @@ import Sp1MarketPlaceHome from "../pages/root/home/Sp1MarketPlaceHome";
 import ListOfMileStones from "../pages/root/listOfMilestones/ListOfMileStones";
 import BidInsights from "../pages/root/bidInsights/BidInsights";
 import FreelancerProjects from "../pages/root/freelanerProjects/FreelancerProjects";
+import FreelancerMessage from "../pages/root/freelancerMessage/FreelancerMessage";
 
 export const router = createBrowserRouter([
     {
@@ -36,7 +37,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/marketplace-message",
-                element: <h2>Marketplace Message</h2>,
+                element: <FreelancerMessage />,
             },
         ],
     },

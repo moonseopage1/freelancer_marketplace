@@ -375,6 +375,9 @@
     height: 59px;
     border-radius: 9px;
     background: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* chat message  */
