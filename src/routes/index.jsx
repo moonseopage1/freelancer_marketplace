@@ -6,6 +6,7 @@ import BidInsights from "../pages/root/bidInsights/BidInsights";
 import FreelancerProjects from "../pages/root/freelanerProjects/FreelancerProjects";
 import FreelancerMessage from "../pages/root/freelancerMessage/FreelancerMessage";
 import FreelancerProjectDetails from "../pages/root/freelancerProjectDetails/FreelancerProjectDetails";
+import FreelancerProfile from "../pages/root/marketplaceProfile/FreelancerProfile";
 
 export const router = createBrowserRouter([
     {
@@ -34,7 +35,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/marketplace-profile",
-                element: <h2>Marketplace Profile</h2>,
+                element: <FreelancerProfile />,
             },
             {
                 path: "/marketplace-message",

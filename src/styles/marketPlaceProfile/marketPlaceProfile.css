@@ -398,7 +398,8 @@
 
 /* reviews pagination design  */
 .reviews_pagination {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .reviews_pagination li.ant-pagination-item:not(.ant-pagination-item-active) {

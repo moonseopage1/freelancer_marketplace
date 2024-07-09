@@ -6,7 +6,7 @@ import AntdTableSkeleton from '../../../components/shared/loaders/tableLoaders/A
 
 const BidInsights = () => {
     // TODO: it will be updated in future by api
-    const [isBidInsightsTableLoading, setIsBidInsightsTableLoading] = useState(true);
+    const [isBidInsightsTableLoading, setIsBidInsightsTableLoading] = useState(false);
     return (
         <ConfigProvider
             theme={{
