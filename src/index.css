@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sp1_marketplace_container {
+    @apply max-w-[1800px] mx-auto px-3 md:px-12;
+}
+
+/* ************sp1 marketplace table skeleton design**************  */
+.sp1_marketplace_skeleton_table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.sp1_marketplace_skeleton_row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.sp1_marketplace_skeleton_row.sp1_marketplace_odd {
+    background-color: #F5F5F5;
+}
+
+.sp1_marketplace_skeleton_row:hover {
+    background-color: #F5F5F5;
+    padding: 18px 0;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}

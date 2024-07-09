@@ -1,0 +1,120 @@
+:root {
+    --primary-blue: #1492E6;
+    --sky-blue-1: #A2D5F6;
+    --primary-white: #fff;
+    --light-blue: #F2F9FE;
+    --light-blue-2: #E0E9EF;
+    --light-blue-3: #EEF9FF;
+    --light-blue-4: #CFE5F3;
+    --light-blue-5: #EDF4FD;
+    --primary-gray: #ffffff33;
+    --secondary-gray: #7C7A7A;
+    --secondary-gray-2: #838383;
+    --secondary-gray-3: #B4B4B4;
+    --secondary-gray-4: #c5c5c5;
+    --light-gray: #DCDCDC;
+    --primary-black: #000;
+    --primary-red: #F66;
+    --primary-pink: #E60379
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sp1_marketplace_page_wrapper {
+    background-color: var(--primary-white);
+    padding: 30px;
+    min-height: calc(100vh - 63px);
+    font-family: 'Poppins', sans-serif !important;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.sp1_marketplace_section_wrapper {
+    background-color: var(--light-blue);
+    padding: 30px;
+}
+
+.sp1_marketplace_default_text {
+    color: var(--primary-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sp1_marketplace_sm_text {
+    color: var(--primary-black);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+
+    .sp1_marketplace_page_wrapper,
+    .sp1_marketplace_section_wrapper {
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .sp1_marketplace_page_wrapper,
+    .sp1_marketplace_section_wrapper {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .sp1_marketplace_page_wrapper,
+    .sp1_marketplace_section_wrapper {
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .sp1_marketplace_page_wrapper,
+    .sp1_marketplace_section_wrapper {
+        padding: 15px;
+    }
+
+    .sp1_marketplace_default_text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .sp1_marketplace_page_wrapper,
+    .sp1_marketplace_section_wrapper {
+        padding: 15px;
+    }
+
+    .sp1_marketplace_default_text {
+        font-size: 12px;
+    }
+
+    .sp1_marketplace_sm_text {
+        font-size: 11px;
+    }
+}
