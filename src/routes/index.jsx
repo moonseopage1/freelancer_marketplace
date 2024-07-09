@@ -5,6 +5,7 @@ import ListOfMileStones from "../pages/root/listOfMilestones/ListOfMileStones";
 import BidInsights from "../pages/root/bidInsights/BidInsights";
 import FreelancerProjects from "../pages/root/freelanerProjects/FreelancerProjects";
 import FreelancerMessage from "../pages/root/freelancerMessage/FreelancerMessage";
+import FreelancerProjectDetails from "../pages/root/freelancerProjectDetails/FreelancerProjectDetails";
 
 export const router = createBrowserRouter([
     {
@@ -21,7 +22,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/marketplace-project-details",
-                element: <h2>Marketplace Project Details</h2>,
+                element: <FreelancerProjectDetails />,
             },
             {
                 path: "/marketplace-bid-insights",
