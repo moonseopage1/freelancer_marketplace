@@ -3,6 +3,7 @@ import RootLayout from "../layouts/RootLayout";
 import Sp1MarketPlaceHome from "../pages/root/home/Sp1MarketPlaceHome";
 import ListOfMileStones from "../pages/root/listOfMilestones/ListOfMileStones";
 import BidInsights from "../pages/root/bidInsights/BidInsights";
+import FreelancerProjects from "../pages/root/freelanerProjects/FreelancerProjects";
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +16,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/marketplace-projects",
-                element: <h2>Marketplace Projects</h2>,
+                element: <FreelancerProjects />,
             },
             {
                 path: "/marketplace-project-details",

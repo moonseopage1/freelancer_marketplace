@@ -1,0 +1,32 @@
+import '../../../styles/freelancerProjects/freelancerProjects.css';
+import { ConfigProvider } from 'antd';
+import ProjectContents from '../../../components/root/freelancerProjects/sections/ProjectContents';
+import ProjectsFilterBar from '../../../components/root/freelancerProjects/sections/ProjectsFilterBar';
+
+const FreelancerProjects = () => {
+    return (
+        <ConfigProvider
+            theme={{
+                components: {
+                    Select: {
+                        selectorBg: 'transparent',
+                    },
+                    Input: {
+                        paddingBlockLG: 10
+                    },
+                },
+            }}
+        >
+            <div className='sp1_marketplace_page_wrapper'>
+                <div className='sp1_marketplace_section_wrapper projects_page_wrapper'>
+                    <div className='projects_default_filter_bar_wrapper'>
+                        <ProjectsFilterBar />
+                    </div>
+                    <ProjectContents />
+                </div>
+            </div>
+        </ConfigProvider>
+    );
+};
+
+export default FreelancerProjects;
