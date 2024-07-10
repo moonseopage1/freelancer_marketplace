@@ -6,9 +6,9 @@
     border-radius: 10px 10px 0px 0px;
 }
 
-.marketplace_cover_image :where(.css-dev-only-do-not-override-13wlzn6).ant-skeleton {
-    display: block !important;
-    width: 100%;
+.marketplace_cover_image :where(.css-dev-only-do-not-override-wv2yel).ant-skeleton.ant-skeleton-element {
+    display: block;
+    width: auto;
 }
 
 .marketplace_profile_flex_between {
