@@ -341,12 +341,12 @@
     line-height: normal;
 }
 
-.payment_summary {
+/* .payment_summary {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 25px;
-}
+} */
 
 .payment_summary_item {
     display: flex;

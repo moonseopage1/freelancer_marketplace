@@ -13,7 +13,7 @@ const Payment = () => {
         <div className="pd_payment_page_wrapper">
             <div className="p_d_payment_card">
                 <h3 className="payment_title">Payment Summary</h3>
-                <div className="payment_summary">
+                <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-[10px] mt-[25px]">
                     <div className="payment_summary_item">
                         <h5 className="payment_summary_title">Requested</h5>
                         <span className="payment_summary_price">$0.00 AUD</span>
