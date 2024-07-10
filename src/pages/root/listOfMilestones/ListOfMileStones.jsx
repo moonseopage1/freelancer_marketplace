@@ -3,34 +3,36 @@ import '../../../styles/listOfMilestones/listOfMilestones.css'
 import { ConfigProvider, Select } from 'antd';
 import ListOfMilestonesTable from '../../../components/root/listOfMilestones/sections/ListOfMilestonesTable';
 import AntdTableSkeleton from '../../../components/shared/loaders/tableLoaders/AntdTableSkeleton';
+import CreateMilestonePayModal from '../../../components/root/listOfMilestones/modals/CreateMilestonePayModal';
 
 const ListOfMileStones = () => {
     const [activeFilterTab, setActiveFilterTab] = useState('incoming');
     // TODO: this loader state come from api later 
     const [isMilestoneDataLoading, setIsMilestoneDataLoading] = useState(false);
+    const [isCreateMilestoneModalOpen, setIsCreateMilestoneModalOpen] = useState(false);
 
     return (
-        <ConfigProvider
-            theme={{
-                components: {
-                    Table: {
-                        headerBg: 'transparent',
-                    },
-                    Select: {
-                        selectorBg: '#1492E6',
-                    },
-                },
-            }}
-        >
-            <div className='sp1_marketplace_page_wrapper'>
-                <div className='sp1_marketplace_section_wrapper list_of_milestones_page_wrapper'>
-                    <div className='list_of_milestones_header'>
-                        <button className='list_of_milestones_btn'>Create Milestone Payment</button>
-                        <div className='list_of_milestones_btn_wrapper'>
-                            <button onClick={() => setActiveFilterTab('incoming')} className={activeFilterTab === 'incoming' ? 'list_of_milestones_btn' : 'list_of_milestones_btn_outline'}>Incoming(145)</button>
-                            <button onClick={() => setActiveFilterTab('outgoing')} className={activeFilterTab === 'outgoing' ? 'list_of_milestones_btn' : 'list_of_milestones_btn_outline'}>Outgoing(14)</button>
-                        </div>
+        <div className='sp1_marketplace_page_wrapper'>
+            <div className='sp1_marketplace_section_wrapper list_of_milestones_page_wrapper'>
+                <div className='list_of_milestones_header'>
+                    <button onClick={() => setIsCreateMilestoneModalOpen(true)} className='list_of_milestones_btn'>Create Milestone Payment</button>
+                    <div className='list_of_milestones_btn_wrapper'>
+                        <button onClick={() => setActiveFilterTab('incoming')} className={activeFilterTab === 'incoming' ? 'list_of_milestones_btn' : 'list_of_milestones_btn_outline'}>Incoming(145)</button>
+                        <button onClick={() => setActiveFilterTab('outgoing')} className={activeFilterTab === 'outgoing' ? 'list_of_milestones_btn' : 'list_of_milestones_btn_outline'}>Outgoing(14)</button>
                     </div>
+                </div>
+                <ConfigProvider
+                    theme={{
+                        components: {
+                            Table: {
+                                headerBg: 'transparent',
+                            },
+                            Select: {
+                                selectorBg: '#1492E6',
+                            },
+                        },
+                    }}
+                >
                     <div className='list_of_milestones_body list_of_milestones_table_wrapper'>
                         {
                             isMilestoneDataLoading ? <AntdTableSkeleton columns={6} rows={10} /> : <ListOfMilestonesTable />
@@ -64,9 +66,14 @@ const ListOfMileStones = () => {
                             />
                         </div>
                     </div>
-                </div>
+                </ConfigProvider>
             </div>
-        </ConfigProvider>
+            {/* modals here */}
+            <CreateMilestonePayModal antdModalOpen={isCreateMilestoneModalOpen} setAntdModalOpen={setIsCreateMilestoneModalOpen} />
+        </div>
+
+
+
     );
 };
 

@@ -16,6 +16,14 @@ button:disabled {
     @apply w-[16px] h-[16px] rounded-full bg-sp1-red text-[10px] text-white flex items-center justify-center absolute -top-[6px] -right-[6px]
 }
 
+.create_btn_modal {
+    @apply bg-primary-main text-primary-white p-[12px] border border-primary-main min-w-[154px]
+}
+
+.cancel_btn_modal {
+    @apply border border-primary-black text-primary-black p-[12px] min-w-[154px]
+}
+
 
 /* ************sp1 marketplace table skeleton design**************  */
 .sp1_marketplace_skeleton_table {
