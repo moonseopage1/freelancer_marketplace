@@ -3,6 +3,7 @@ import FromTop from "../components/shared/global/FromTop";
 import DynamicTitle from "../components/shared/global/DynamicTitle";
 import Navbar from "../components/shared/root/Navbar";
 import Sp1Navbar from "../components/shared/root/Sp1Navbar";
+import Sp1Footer from "../components/shared/root/Sp1Footer";
 
 const RootLayout = () => {
     return (
@@ -15,8 +16,7 @@ const RootLayout = () => {
                         <Outlet />
                     </div>
                 </DynamicTitle>
-                {/* <OurContactDetails /> */}
-                {/* <Footer /> */}
+                <Sp1Footer />
             </FromTop>
         </main>
     );
