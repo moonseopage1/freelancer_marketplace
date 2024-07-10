@@ -25,7 +25,7 @@ const ProjectDetails = ({ singleProject }) => {
 
   const { project_id, details, currency, budget_range, reviews_count, skills, client_info, isAwarded, bidding_deadline, } = singleProject || {};
 
-  const { profile_image_url, name, location, member_since, client_engagement, client_verification } = client_info || {};
+  const { avatar, name, location, member_since, client_engagement, client_verification } = client_info || {};
 
   return (
     <div className='p_d_wrapper'>
@@ -78,7 +78,7 @@ const ProjectDetails = ({ singleProject }) => {
             <h4 className='sp1_marketplace_default_text'>No spam, self-promotion or advertisement is permitted.</h4>
           </div>
           <div className='p_d_clarification_board'>
-            <img className='p_d_client_image' src={profile_image_url} alt={name} />
+            <img className='p_d_client_image' src={avatar} alt={name} />
             <div className='p_d_clarification_board_input'>
               <TextArea
                 placeholder="Ask a question....."

@@ -8,7 +8,7 @@ import FractionalRating from '../../../shared/global/FractionalRating';
 
 const PortfolioDetailsModal = ({ item, isOpen, setIsOpen, profileData }) => {
     const { thumbnails, skills, category } = item || {};
-    const { hourly_rate, earnings_score, reviews_count, average_rating, name, profile_image_url, location } = profileData || {};
+    const { hourly_rate, earnings_score, reviews_count, average_rating, name, avatar, location } = profileData || {};
     return (
         <Modal className='portfolio_modal'
             closable={false}
@@ -33,7 +33,7 @@ const PortfolioDetailsModal = ({ item, isOpen, setIsOpen, profileData }) => {
                     <div className='portfolio_personal_info'>
                         <div className='d-flex align-items-start'>
                             <div className='portfolio_modal_avatar_wrapper'>
-                                <img src={profile_image_url} alt="profile picture" className='portfolio_modal_avatar' />
+                                <img src={avatar} alt="profile picture" className='portfolio_modal_avatar' />
                                 <img src={chatActiveIcon} alt="chatActiveIcon" className='portfolio_modal_active_status' />
                             </div>
                             <InfoWithIconTitle img_url={`/flags/4x3/${location?.iso}.svg`} title={name} />

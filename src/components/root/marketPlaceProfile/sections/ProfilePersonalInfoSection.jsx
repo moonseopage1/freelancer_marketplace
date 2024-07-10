@@ -25,7 +25,7 @@ const generalDescItems = [
 ]
 
 const ProfilePersonalInfoSection = ({ profileData }) => {
-    const { profile_image_url, name, user_name, bio, average_rating, reviews_count, earnings_score, top_rated_percentage, job_success: { jobs_completed, on_budget, on_time, repeat_hire_rate }, is_online, hourly_rate, location: { iso, country, city }, recommendations_count, member_since, general_description, is_verified } = profileData || {};
+    const { avatar, name, user_name, bio, average_rating, reviews_count, earnings_score, top_rated_percentage, job_success: { jobs_completed, on_budget, on_time, repeat_hire_rate }, is_online, hourly_rate, location: { iso, country, city }, recommendations_count, member_since, general_description, is_verified } = profileData || {};
 
     const [activeKey, setActiveKey] = useState('general');
 
@@ -36,7 +36,7 @@ const ProfilePersonalInfoSection = ({ profileData }) => {
     return (
         <div className='personal_info_wrapper'>
             <div className='personal_info_left'>
-                <img className='user_profile_image' src={profile_image_url} alt={name} />
+                <img className='user_profile_image' src={avatar} alt={name} />
                 <div className='personal_info_right_top freelancer_name_wrapper_small'>
                     <div className='mr-2 '>
                         <h4 className='freelancer_name'>{name} <span className='freelancer_user_name'>@{user_name}</span> {is_verified && <span><img src={verifiedIcon} alt="verifiedIcon" /></span>}</h4>

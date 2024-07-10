@@ -4,7 +4,7 @@ const ProfilePersonalInfoLoader = () => {
     return (
         <div className='personal_info_wrapper'>
             <div className='personal_info_left'>
-                {/* <img className='user_profile_image' src={profile_image_url} alt={name} /> */}
+                {/* <img className='user_profile_image' src={avatar} alt={name} /> */}
                 <Skeleton.Image style={{ width: '100%', minWidth: '250px', minHeight: '250px', height: '100%' }} active={true} />
                 <div className='personal_info_left_content'>
                     <div style={{ maxWidth: '250px', width: '100%', marginBottom: '10px' }}>

@@ -12,6 +12,13 @@ export default {
         "sp1-lightGray": "#EDEDED",
         "sp1-red": "#FF0413",
       },
+      screens: {
+        xs: "576px", // Custom breakpoint for screens >= 375px
+        sm: "768px", // Custom breakpoint for screens >= 640px
+        md: "992px", // Custom breakpoint for screens >= 968px
+        lg: "1200px", // Custom breakpoint for screens >= 1280px
+        xl: "1600px", // Custom breakpoint for screens >= 1440px
+      },
     },
   },
   plugins: [],

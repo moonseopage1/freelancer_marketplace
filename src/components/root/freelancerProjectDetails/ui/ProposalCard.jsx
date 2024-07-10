@@ -8,12 +8,12 @@ import FractionalRating from '../../../shared/global/FractionalRating';
 // TODO: need to make pixel perfect font and size 
 const ProposalCard = ({ item }) => {
     const { id, bid_amount, currency, bidding_time, proposal_title, proposal_message, balance, success_rate, freelancer_info } = item || {};
-    const { profile_image_url, name, user_name, is_new_freelancer, location, average_rating, reviews_count } = freelancer_info || {};
+    const { avatar, name, user_name, is_new_freelancer, location, average_rating, reviews_count } = freelancer_info || {};
     return (
         <div className='p_d_proposal_card'>
             <div className='p_d_proposal_card_top'>
                 <div className='p_d_proposal_user_info'>
-                    <img className='p_d_proposal_card_avatar' src={profile_image_url} alt={name} />
+                    <img className='p_d_proposal_card_avatar' src={avatar} alt={name} />
                     <div>
                         <p className='p_d_proposal_card_name'>{name} <span className='p_d_proposal_card_user_name'>@{user_name}</span></p>
                         <div className='project_card_rating_wrapper'>
