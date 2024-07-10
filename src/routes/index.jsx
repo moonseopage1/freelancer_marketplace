@@ -13,12 +13,12 @@ export const router = createBrowserRouter([
         path: "/",
         element: <RootLayout />,
         children: [
+            // {
+            //     path: "/",
+            //     element: <Sp1MarketPlaceHome />,
+            // },
             {
                 path: "/",
-                element: <Sp1MarketPlaceHome />,
-            },
-            {
-                path: "/marketplace-projects",
                 element: <FreelancerProjects />,
             },
             {
