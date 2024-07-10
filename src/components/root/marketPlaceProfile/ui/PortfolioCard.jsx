@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PortfolioDetailsModal from '../modals/PortfolioDetailsModal';
+import PropTypes from 'prop-types';
 
 const PortfolioCard = ({ item, profileData }) => {
     const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false);
@@ -25,3 +26,8 @@ const PortfolioCard = ({ item, profileData }) => {
 };
 
 export default PortfolioCard;
+
+PortfolioCard.propTypes = {
+    item: PropTypes.object,
+    profileData: PropTypes.object
+}

@@ -3,7 +3,7 @@ import archiveIcon from '../../../../assets/freelancerProjects/archive-tick.svg'
 import commentIcon from '../../../../assets/freelancerProjects/comment-icon.svg';
 import moment from 'moment';
 import FractionalRating from '../../../shared/global/FractionalRating';
-// import FractionalRating from '../../commonComponents/FractionalRating';
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({ item }) => {
     const { title, description, details, currency, budget_range, average_bid_amount, bids_count, average_rating, reviews_count, skills, created_at } = item || {};
@@ -64,3 +64,7 @@ const ProjectCard = ({ item }) => {
 };
 
 export default ProjectCard;
+
+ProjectCard.propTypes = {
+    item: PropTypes.object
+}

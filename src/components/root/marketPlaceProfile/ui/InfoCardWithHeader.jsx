@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const InfoCardWithHeader = ({ title, children }) => {
     return (
@@ -12,3 +12,8 @@ const InfoCardWithHeader = ({ title, children }) => {
 };
 
 export default InfoCardWithHeader;
+
+InfoCardWithHeader.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.node
+}

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Carousel } from 'antd';
 import PortfolioDetailsModal from '../modals/PortfolioDetailsModal';
+import PropTypes from 'prop-types';
 
 const ProfilePortfolioSection = ({ portfolio, profileData }) => {
     const [isPortfolioModalOpen, setIsPortfolioModalOpen] = useState(false);
@@ -33,3 +34,8 @@ const ProfilePortfolioSection = ({ portfolio, profileData }) => {
 };
 
 export default ProfilePortfolioSection;
+
+ProfilePortfolioSection.propTypes = {
+    portfolio: PropTypes.array,
+    profileData: PropTypes.object
+}

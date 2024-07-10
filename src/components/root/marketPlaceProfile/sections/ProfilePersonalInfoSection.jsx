@@ -8,6 +8,7 @@ import { CiBookmarkCheck } from "react-icons/ci";
 import { profileIcons } from '../../../../assets/marketplaceProfile/profileIcons';
 import InfoWithIconTitle from '../../freelancerProjectDetails/ui/InfoWithIconTitle';
 import FractionalRating from '../../../shared/global/FractionalRating';
+import PropTypes from 'prop-types';
 
 const { dollarSquare, likeIcon, clockIcon, shareIcon, verifiedIcon, handShakeIcon } = profileIcons;
 
@@ -114,3 +115,7 @@ const ProfilePersonalInfoSection = ({ profileData }) => {
 };
 
 export default ProfilePersonalInfoSection;
+
+ProfilePersonalInfoSection.propTypes = {
+    profileData: PropTypes.object
+}

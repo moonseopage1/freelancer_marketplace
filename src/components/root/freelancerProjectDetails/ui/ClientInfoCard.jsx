@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const ClientInfoCard = ({ title, children }) => (
     <div className='p_d_about_client_section'>
@@ -10,3 +10,8 @@ const ClientInfoCard = ({ title, children }) => (
 );
 
 export default ClientInfoCard;
+
+ClientInfoCard.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.node
+}

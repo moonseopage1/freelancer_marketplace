@@ -13,6 +13,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import FilesFilterSkeleton from '../../../shared/loaders/freelancerProjectsLoaders/FilesFilterSkeleton';
 import AntdTableSkeleton from '../../../shared/loaders/tableLoaders/AntdTableSkeleton';
 import { freelancer_project_files } from '../../../../constants/projects';
+import PropTypes from 'prop-types';
 
 
 /**
@@ -198,3 +199,7 @@ const Files = ({ isProjectDataLoading }) => {
 };
 
 export default Files;
+
+Files.propTypes = {
+    isProjectDataLoading: PropTypes.bool,
+}

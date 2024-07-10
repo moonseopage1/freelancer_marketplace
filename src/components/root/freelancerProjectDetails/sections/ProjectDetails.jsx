@@ -18,6 +18,7 @@ import { BiSolidCommentDots } from "react-icons/bi";
 import ClientInfoCard from '../ui/ClientInfoCard';
 import { getRemainingTime } from '../../../../utils';
 import FractionalRating from '../../../shared/global/FractionalRating';
+import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 
@@ -145,3 +146,7 @@ const ProjectDetails = ({ singleProject }) => {
 };
 
 export default ProjectDetails;
+
+ProjectDetails.prototypes = {
+  isProjectDataLoading: PropTypes.bool
+}

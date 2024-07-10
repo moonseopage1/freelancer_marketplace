@@ -1,4 +1,5 @@
 import { Switch } from 'antd';
+import PropTypes from 'prop-types';
 
 const ToggleActionItem = ({ title, description, state, setState }) => (
     <div className='chat_action_toggle_item'>
@@ -11,3 +12,10 @@ const ToggleActionItem = ({ title, description, state, setState }) => (
 );
 
 export default ToggleActionItem;
+
+ToggleActionItem.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    state: PropTypes.bool,
+    setState: PropTypes.func
+}

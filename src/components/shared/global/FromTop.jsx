@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const FromTop = ({ children }) => {
     const location = useLocation();
@@ -10,3 +11,7 @@ const FromTop = ({ children }) => {
 };
 
 export default FromTop;
+
+FromTop.propTypes = {
+    children: PropTypes.node
+}

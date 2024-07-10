@@ -5,6 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import boxTickIcon from '../../../../assets/marketplaceProfile/box-tick.svg';
 import { verificationIcons } from '../../../../assets/marketplaceProfile/verificationIcons';
 import InfoWithIconTitle from '../../freelancerProjectDetails/ui/InfoWithIconTitle';
+import PropTypes from 'prop-types';
 
 const { reputationIcon, userIcon1, userIcon2,
     paymentIcon1, paymentIcon2, callIcon1, callIcon2,
@@ -105,3 +106,7 @@ const ProfileRightSection = ({ profileData }) => {
 };
 
 export default ProfileRightSection;
+
+ProfileRightSection.propTypes = {
+    profileData: PropTypes.object
+}

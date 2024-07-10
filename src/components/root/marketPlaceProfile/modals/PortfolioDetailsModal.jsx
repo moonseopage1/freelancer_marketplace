@@ -5,6 +5,7 @@ import { FaBarcode } from 'react-icons/fa';
 import chatActiveIcon from '../../../../assets/freelancerMessage/chat-active.svg';
 import InfoWithIconTitle from '../../freelancerProjectDetails/ui/InfoWithIconTitle';
 import FractionalRating from '../../../shared/global/FractionalRating';
+import PropTypes from 'prop-types';
 
 const PortfolioDetailsModal = ({ item, isOpen, setIsOpen, profileData }) => {
     const { thumbnails, skills, category } = item || {};
@@ -69,3 +70,10 @@ const PortfolioDetailsModal = ({ item, isOpen, setIsOpen, profileData }) => {
 };
 
 export default PortfolioDetailsModal;
+
+PortfolioDetailsModal.propTypes = {
+    item: PropTypes.object,
+    isOpen: PropTypes.bool,
+    setIsOpen: PropTypes.func,
+    profileData: PropTypes.object
+}

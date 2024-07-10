@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const FilterBarTitle = ({ title, onClick }) => {
     return (
@@ -10,3 +10,8 @@ const FilterBarTitle = ({ title, onClick }) => {
 };
 
 export default FilterBarTitle;
+
+FilterBarTitle.propTypes = {
+    title: PropTypes.string,
+    onClick: PropTypes.func
+}

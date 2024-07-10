@@ -2,7 +2,7 @@ import moment from 'moment';
 import { BsDot } from 'react-icons/bs';
 import FractionalRating from '../../../shared/global/FractionalRating';
 import shareIcon from '../../../../assets/marketplaceProfile/share-icon.svg';
-
+import PropTypes from 'prop-types';
 
 const ReviewCard = ({ item, isLast }) => {
     const { rating, comment, project, client_info, created_at } = item || {};
@@ -45,3 +45,8 @@ const ReviewCard = ({ item, isLast }) => {
 };
 
 export default ReviewCard;
+
+ReviewCard.propTypes = {
+    item: PropTypes.object,
+    isLast: PropTypes.bool
+}

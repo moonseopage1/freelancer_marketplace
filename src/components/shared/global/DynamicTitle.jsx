@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const formatTitleFromPath = (path) => {
     const pathParts = path.split("/");
@@ -13,6 +14,7 @@ const formatTitleFromPath = (path) => {
     return formattedTitle;
 };
 
+
 const DynamicTitle = ({ children }) => {
     const location = useLocation();
 
@@ -25,3 +27,7 @@ const DynamicTitle = ({ children }) => {
 };
 
 export default DynamicTitle;
+
+DynamicTitle.propTypes = {
+    children: PropTypes.node
+};

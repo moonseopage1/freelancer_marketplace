@@ -12,6 +12,7 @@ import ChatContents from '../ui/ChatContents';
 import { getFileIcon, shortenFileName } from '../../../../utils';
 import ChatBoxHeaderAvatarLoader from '../../../shared/loaders/freelancerMessageLoaders/ChatBoxHeaderAvatarLoader';
 import InnerChatLoader from '../../../shared/loaders/freelancerMessageLoaders/InnerChatLoader';
+import PropTypes from 'prop-types';
 
 const { TextArea } = Input;
 
@@ -20,7 +21,7 @@ const ChatBox = ({ isMessageLoading }) => {
     const [fileInputData, setFileInputData] = useState([]);
     const [filePreviews, setFilePreviews] = useState([]);
     const [showEmojiPicker, setShowEmojiPicker] = useState(false);
-    const { register, handleSubmit, reset } = useForm();
+    const { handleSubmit, reset } = useForm();
 
     const handleFileChange = (event) => {
         const files = event.target.files;
@@ -160,4 +161,8 @@ const ChatBox = ({ isMessageLoading }) => {
 };
 
 export default ChatBox;
+
+ChatBox.propTypes = {
+    isMessageLoading: PropTypes.bool
+};
 

@@ -1,7 +1,8 @@
 import moment from 'moment';
 import checkIcon from '../../../../assets/freelancerMessage/checkIcon.svg';
 import checkIcon2 from '../../../../assets/freelancerMessage/checkIcon-2.svg';
-import activeIcon from '../../../../assets/freelancerMessage/chat-active.svg'
+import activeIcon from '../../../../assets/freelancerMessage/chat-active.svg';
+import PropTypes from 'prop-types';
 
 const ChatMessage = ({ message: messageDetails, user, isRight }) => {
     // console.log(user);
@@ -34,3 +35,9 @@ const ChatMessage = ({ message: messageDetails, user, isRight }) => {
 };
 
 export default ChatMessage;
+
+ChatMessage.propTypes = {
+    message: PropTypes.object,
+    user: PropTypes.object,
+    isRight: PropTypes.bool
+}

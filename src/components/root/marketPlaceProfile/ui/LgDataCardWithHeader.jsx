@@ -1,5 +1,5 @@
 import { Divider } from 'antd';
-import React from 'react';
+import PropTypes from "prop-types";
 
 const LgDataCardWithHeader = ({ title, actionCompo, children }) => {
     return (
@@ -17,3 +17,9 @@ const LgDataCardWithHeader = ({ title, actionCompo, children }) => {
 };
 
 export default LgDataCardWithHeader;
+
+LgDataCardWithHeader.propTypes = {
+    title: PropTypes.string,
+    actionCompo: PropTypes.node,
+    children: PropTypes.node
+}

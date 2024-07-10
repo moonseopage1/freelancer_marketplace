@@ -7,6 +7,7 @@ import chatActiveIcon from '../../../../assets/freelancerMessage/chat-active.svg
 import bagIcon from '../../../../assets/freelancerMessage/bag-2.svg';
 import ChatActionListLoader from '../../../shared/loaders/freelancerMessageLoaders/ChatActionListLoader';
 import ToggleActionItem from '../ui/ToggleActionItem';
+import PropTypes from 'prop-types';
 
 const ChatActionList = ({ isMessageLoading }) => {
     const [isArchived, setIsArchived] = useState(false);
@@ -89,3 +90,7 @@ const ChatActionList = ({ isMessageLoading }) => {
 };
 
 export default ChatActionList;
+
+ChatActionList.propTypes = {
+    isMessageLoading: PropTypes.bool
+};

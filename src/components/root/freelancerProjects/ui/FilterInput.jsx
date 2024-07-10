@@ -1,4 +1,5 @@
 import { Input } from 'antd';
+import PropTypes from 'prop-types';
 
 const FilterInput = ({ label, value, placeholder, onChange, suffix, prefix }) => {
     return (
@@ -10,3 +11,12 @@ const FilterInput = ({ label, value, placeholder, onChange, suffix, prefix }) =>
 };
 
 export default FilterInput;
+
+FilterInput.propTypes = {
+    label: PropTypes.string,
+    value: PropTypes.string,
+    placeholder: PropTypes.string,
+    onChange: PropTypes.func,
+    suffix: PropTypes.any,
+    prefix: PropTypes.any
+}

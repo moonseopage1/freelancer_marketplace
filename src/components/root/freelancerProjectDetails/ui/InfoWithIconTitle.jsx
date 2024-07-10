@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const InfoWithIconTitle = ({ icon, img_url, title }) => {
     return (
@@ -11,3 +11,9 @@ const InfoWithIconTitle = ({ icon, img_url, title }) => {
 };
 
 export default InfoWithIconTitle;
+
+InfoWithIconTitle.propTypes = {
+    icon: PropTypes.element,
+    img_url: PropTypes.string,
+    title: PropTypes.string
+}

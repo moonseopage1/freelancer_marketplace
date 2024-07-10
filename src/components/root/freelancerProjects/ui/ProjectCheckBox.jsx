@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const ProjectCheckBox = ({ data, onChange, checked }) => {
     const { value, title } = data || {};
@@ -20,3 +20,9 @@ const ProjectCheckBox = ({ data, onChange, checked }) => {
 };
 
 export default ProjectCheckBox;
+
+ProjectCheckBox.propTypes = {
+    data: PropTypes.object,
+    onChange: PropTypes.func,
+    checked: PropTypes.bool
+}

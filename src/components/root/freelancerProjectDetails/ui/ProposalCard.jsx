@@ -4,6 +4,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 import { GoCircle } from "react-icons/go";
 import starIcon from '../../../../assets/freelancerProjectDetails/Star1.svg';
 import FractionalRating from '../../../shared/global/FractionalRating';
+import PropTypes from 'prop-types';
 
 // TODO: need to make pixel perfect font and size 
 const ProposalCard = ({ item }) => {
@@ -66,3 +67,7 @@ const ProposalCard = ({ item }) => {
 };
 
 export default ProposalCard;
+
+ProposalCard.propTypes = {
+    item: PropTypes.object
+}

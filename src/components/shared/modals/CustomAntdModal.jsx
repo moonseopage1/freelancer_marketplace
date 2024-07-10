@@ -24,7 +24,7 @@ const CustomAntdModal = ({ title, subTitle, isCentered, antdModalOpen, setAntdMo
                         <button
                             onClick={() => setAntdModalOpen(false)}
                         >
-                            <img src={closeIcon} alt="closeIcon" />
+                            <img src={closeIcon} className='w-[30px] h-[30px] rounded-full' alt="closeIcon" />
                         </button>
                     </div>
                     <Divider />

@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const FilesFilterButton = ({ isActive, onClick, icon, label, count }) => {
     return (
@@ -10,3 +10,11 @@ const FilesFilterButton = ({ isActive, onClick, icon, label, count }) => {
 };
 
 export default FilesFilterButton;
+
+FilesFilterButton.propTypes = {
+    isActive: PropTypes.bool,
+    onClick: PropTypes.func,
+    icon: PropTypes.string,
+    label: PropTypes.string,
+    count: PropTypes.number
+}

@@ -7,6 +7,7 @@ import ReviewCard from '../ui/ReviewCard';
 import ProfilePersonalInfoSection from './ProfilePersonalInfoSection';
 import ProfilePortfolioSection from './ProfilePortfolioSection';
 import { antdPaginate } from '../../../../utils/antdPaginate';
+import PropTypes from 'prop-types';
 
 const ProfileLeftSection = ({ profileData }) => {
     const { portfolio, reviews, experiences, educations, qualifications, publications } = profileData || {};
@@ -176,3 +177,7 @@ const ProfileLeftSection = ({ profileData }) => {
 };
 
 export default ProfileLeftSection;
+
+ProfileLeftSection.propTypes = {
+    profileData: PropTypes.object
+}

@@ -1,7 +1,7 @@
 import { Tabs } from 'antd';
 import { useEffect, useMemo } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
 const items = [
     {
         key: 'Details',
@@ -50,3 +50,7 @@ const ProjectDetailsTab = ({ isAwarded }) => {
 };
 
 export default ProjectDetailsTab;
+
+ProjectDetailsTab.propTypes = {
+    isAwarded: PropTypes.bool
+}

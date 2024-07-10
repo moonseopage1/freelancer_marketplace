@@ -1,7 +1,7 @@
-import React from 'react';
 import { CiSearch } from "react-icons/ci";
 import ChatListLoader from '../../../shared/loaders/freelancerMessageLoaders/ChatListLoader';
 import ChatListItem from '../ui/ChatListItem';
+import PropTypes from 'prop-types';
 
 const ChatList = ({ isMessageLoading }) => {
     return (
@@ -34,3 +34,7 @@ const ChatList = ({ isMessageLoading }) => {
 };
 
 export default ChatList;
+
+ChatList.propTypes = {
+    isMessageLoading: PropTypes.bool
+}
