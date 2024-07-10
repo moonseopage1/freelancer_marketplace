@@ -47,42 +47,42 @@ export const footer_social_links = [
 export const footer_important_links = [
   {
     id: 1,
-    url: "",
+    url: "/company",
     label: "Company",
   },
   {
     id: 2,
-    url: "/",
+    url: "/blog",
     label: "Blog",
   },
   {
     id: 3,
-    url: "/",
+    url: "/careers",
     label: "Careers",
   },
   {
     id: 4,
-    url: "/",
+    url: "/pricing",
     label: "Pricing",
   },
   {
     id: 5,
-    url: "/",
+    url: "/resources",
     label: "Resources",
   },
   {
     id: 6,
-    url: "/",
+    url: "/documentation",
     label: "Documentation",
   },
   {
     id: 7,
-    url: "/",
+    url: "/papers",
     label: "Papers",
   },
   {
     id: 8,
-    url: "/",
+    url: "/press-conferences",
     label: "Press Conferences",
   },
 ];
@@ -90,27 +90,27 @@ export const footer_important_links = [
 export const footer_nav_links = [
   {
     id: 1,
-    url: "/",
+    url: "/about-us",
     label: "About Us",
   },
   {
     id: 2,
-    url: "/",
+    url: "/contact-us",
     label: "Contact Us",
   },
   {
     id: 3,
-    url: "/",
+    url: "/help",
     label: "Help",
   },
   {
     id: 4,
-    url: "/",
+    url: "/privacy-policy",
     label: "Privacy Policy",
   },
   {
     id: 5,
-    url: "/",
+    url: "/disclaimer",
     label: "Disclaimer",
   },
 ];
