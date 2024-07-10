@@ -147,6 +147,6 @@ const ProjectDetails = ({ singleProject }) => {
 
 export default ProjectDetails;
 
-ProjectDetails.prototypes = {
-  isProjectDataLoading: PropTypes.bool
+ProjectDetails.propTypes = {
+  singleProject: PropTypes.object
 }

@@ -316,6 +316,73 @@
     margin-top: 6px;
 }
 
+/* payment page tab section */
+.pd_payment_page_wrapper {
+    border-radius: 9px;
+    border: 1px solid var(--light-blue-2);
+    background: var(--primary-white);
+    padding: 20px;
+}
+
+.p_d_payment_card {
+    border-radius: 9px;
+    border: 1px solid var(--light-blue-2);
+    background: var(--primary-white);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.payment_title {
+    color: var(--primary-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.payment_summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.payment_summary_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment_summary_title {
+    color: var(--primary-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.payment_summary_price {
+    color: var(--primary-black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.download_images_summary_btn {
+    color: var(--primary-blue);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 17px;
+}
+
+.milestone_payment_wrapper {
+    margin-top: 15px;
+}
+
 /******************** Files page tab section ********************/
 .files_page_wrapper {
     display: grid;
