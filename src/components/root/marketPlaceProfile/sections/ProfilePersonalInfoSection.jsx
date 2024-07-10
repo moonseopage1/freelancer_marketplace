@@ -39,7 +39,7 @@ const ProfilePersonalInfoSection = ({ profileData }) => {
                 <img className='user_profile_image' src={profile_image_url} alt={name} />
                 <div className='personal_info_right_top freelancer_name_wrapper_small'>
                     <div className='mr-2 '>
-                        <h4 className='freelancer_name'>{name} <span className='freelancer_user_name'>@{user_name}</span> {is_verified && <img src={verifiedIcon} alt="verifiedIcon" />}</h4>
+                        <h4 className='freelancer_name'>{name} <span className='freelancer_user_name'>@{user_name}</span> {is_verified && <span><img src={verifiedIcon} alt="verifiedIcon" /></span>}</h4>
                         <p className='freelancer_bio'>{bio}</p>
                     </div>
                     <div className='personal_info_action_wrapper'>
