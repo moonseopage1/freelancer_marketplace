@@ -6,11 +6,14 @@ import ProfileLeftSection from '../../../components/root/marketPlaceProfile/sect
 import ProfileRightSection from '../../../components/root/marketPlaceProfile/sections/ProfileRightSection';
 import ProfileLeftSectionLoader from '../../../components/shared/loaders/freelancerProfileLoaders/ProfileLeftSectionLoader';
 import ProfileRightSectionLoader from '../../../components/shared/loaders/freelancerProfileLoaders/ProfileRightSectionLoader';
+import { useGetFreelancerProfileQuery } from '../../../redux/features/freelancerProfile/freelancerProfileApi';
 
 
 const FreelancerProfile = () => {
     const { cover_image } = user_profile || {}
     const [isProfileLoading, setIsProfileLoading] = useState(true);
+
+    const { data } = useGetFreelancerProfileQuery()
 
     //! TODO: This is used for development purpose only
     useEffect(() => {

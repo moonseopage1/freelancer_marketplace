@@ -8,7 +8,12 @@
 
 .marketplace_cover_image :where(.css-dev-only-do-not-override-wv2yel).ant-skeleton.ant-skeleton-element {
     display: block;
-    width: auto;
+    width: 100% !important;
+}
+
+:where(.css-wv2yel).ant-skeleton.ant-skeleton-element {
+    display: block !important;
+    width: 100% !important;
 }
 
 .marketplace_profile_flex_between {
@@ -558,12 +563,27 @@
 }
 
 /* overwrite default css */
-.marketplace_portfolio_item .slick-prev::after {
+/* .marketplace_portfolio_item .slick-prev::after {
     display: none !important;
 }
 
 .marketplace_portfolio_item .slick-next::after {
     display: none !important;
+} */
+
+:where(.css-wv2yel).ant-carousel .slick-next,
+:where(.css-wv2yel).ant-carousel .slick-prev {
+    inset-inline-end: 8px;
+    background: #474040;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+:where(.css-wv2yel).ant-carousel .slick-next::after,
+:where(.css-wv2yel).ant-carousel .slick-prev::after {
+    /* transform: rotate(135deg); */
+    margin: 6px !important;
 }
 
 .ant-modal-mask {
